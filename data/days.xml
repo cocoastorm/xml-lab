@@ -3,22 +3,113 @@
 <days>
     <day dayofweek="Monday">
         <daybooking>
+            <time>930</time>
+            <courseName>BLAW3600</courseName>
+            <room>SW3-4785</room>
+            <instructor>Catherine Ryan</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1130</time>
+            <courseName>COMP4735</courseName>
+            <room>SW1-1205</room>
+            <instructor>Mirela Gutica</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1230</time>
+            <courseName>COMP4735</courseName>
+            <room>SW3-4785</room>
+            <instructor>Mirela Gutica</instructor>
+        </daybooking>
+    </day>
+
+    <day dayofweek="Tuesday">
+        <daybooking>
             <time>830</time>
-            <courseName>COMP1111</courseName>
-            <room>1</room>
-            <instructor>Bob Bobby</instructor>
+            <courseName>COMP4977</courseName>
+            <room>SE12-325</room>
+            <instructor>D'Arcy Smith</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1130</time>
+            <courseName>COMP4560</courseName>
+            <room>SW5-1850</room>
+            <instructor>Brenda Fine</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1430</time>
+            <courseName>COMP4711</courseName>
+            <room>SW5-1840</room>
+            <instructor>James Parry</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1530</time>
+            <courseName>COMP4560</courseName>
+            <room>SE12-322</room>
+            <instructor>Brenda Fine</instructor>
+        </daybooking>
+    </day>
+
+    <day dayofweek="Wednesday">
+        <daybooking>
+            <time>930</time>
+            <courseName>COMP4711</courseName>
+            <room>SE12-320</room>
+            <instructor>James Parry</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1330</time>
+            <courseName>COMP4735</courseName>
+            <room>SW1-1205</room>
+            <instructor>Mirela Gutica</instructor>
+        </daybooking>
+    </day>
+
+    <day dayofweek="Thursday">
+        <daybooking>
+            <time>830</time>
+            <courseName>COMP4976</courseName>
+            <room>SE12-308</room>
+            <instructor>Medhat Elnasry</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1130</time>
+            <courseName>COMP4735</courseName>
+            <room>SW3-1710</room>
+            <instructor>Mirela Gutica</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1230</time>
+            <courseName>COMP4976</courseName>
+            <room>SE12-308</room>
+            <instructor>Medhat Elnasry</instructor>
+        </daybooking>
+    </day>
+
+    <day dayofweek="Friday">
+        <daybooking>
+            <time>830</time>
+            <courseName>BLAW3600</courseName>
+            <room>SW5-1840</room>
+            <instructor>Catherine Ryan</instructor>
         </daybooking>
         <daybooking>
             <time>1030</time>
-            <courseName>COMP1222</courseName>
-            <room>2</room>
-            <instructor>Lisa Lisason</instructor>
+            <courseName>COMP4976</courseName>
+            <room>SE12-308</room>
+            <instructor>Medhat Elnasry</instructor>
         </daybooking>
         <daybooking>
-            <time></time>
-            <courseName></courseName>
-            <room></room>
-            <instructor></instructor>
+            <time>1230</time>
+            <courseName>COMP4560</courseName>
+            <room>SW3-1750</room>
+            <instructor>Brenda Fine</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1430</time>
+            <courseName>COMP4977</courseName>
+            <room>SE12-325</room>
+            <instructor>D'Arcy Smith</instructor>
         </daybooking>
     </day>
+
 </days>
