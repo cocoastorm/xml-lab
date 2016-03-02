@@ -8,4 +8,5 @@ Data modeling Timetable data. Made by BCIT students.
 ## Changelog
 - Initial setup with gitignore and data folder.
 - Create DTD file.
-- Create timetables.xml which links three facets (*.xml)
+- Create timetables.xml which links three facets
+- Create periods.xml with timetable data
