@@ -3,3 +3,8 @@
 <!ENTITY days SYSTEM "days.xml">
 <!ENTITY periods SYSTEM "periods.xml">
 <!ENTITY courses SYSTEM "courses.xml">
+<timetables>
+  &days;
+  &periods;
+  &courses;
+</timetables>
