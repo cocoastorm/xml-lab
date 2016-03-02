@@ -8,6 +8,7 @@
 <!ELEMENT daybooking (time, courseName, room, instructor)*>
 
 
+
 <!ELEMENT periods (timeslot)*>
 <!ELEMENT timeslot (periodbooking)*>
 <!ATTLIST timeslot
@@ -22,4 +23,9 @@
 	code CDATA #REQUIRED
 >
 <!ELEMENT coursebooking (weekday, time, room, instructor)*>
-	
+
+<!ELEMENT time (#PCDATA)*>
+<!ELEMENT courseName (#PCDATA)*>
+<!ELEMENT room (#PCDATA)*>
+<!ELEMENT instructor (#PCDATA)*>
+<!ELEMENT weekday (#PCDATA)*>

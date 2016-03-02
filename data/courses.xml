@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<courses>
+    <course code="BLAW3600">
+        <coursebooking>
+            <weekday>Monday</weekday>
+            <time>930</time>
+            <room>SW3-4785</room>
+            <instructor>Catherine Ryan</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Friday</weekday>
+            <time>830</time>
+            <room>SW3-4785</room>
+            <instructor>Catherine Ryan</instructor>
+        </coursebooking>
+    </course>
+
+    <course code="COMP4735">
+        <coursebooking>
+            <weekday>Monday</weekday>
+            <time>1130</time>
+            <room>SW1-1205</room>
+            <instructor>Mirela Gutica</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Monday</weekday>
+            <time>1230</time>
+            <room>SE12-320</room>
+            <instructor>Mirela Gutica</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Wednesday</weekday>
+            <time>1330</time>
+            <room>SW1-1205</room>
+            <instructor>Mirela Gutica</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Thursday</weekday>
+            <time>1130</time>
+            <room>SW3-1750</room>
+            <instructor>Mirela Gutica</instructor>
+        </coursebooking>
+    </course>
+
+    <course code="COMP4977">
+        <coursebooking>
+            <weekday>Tuesday</weekday>
+            <time>830</time>
+            <room>SE12-325</room>
+            <instructor>D'Arcy Smith</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Friday</weekday>
+            <time>1430</time>
+            <room>SE12-325</room>
+            <instructor>D'Arcy Smith</instructor>
+        </coursebooking>
+    </course>
+
+    <course code="COMP4560">
+        <coursebooking>
+            <weekday>Tuesday</weekday>
+            <time>1130</time>
+            <room>SW5-1850</room>
+            <instructor>Brenda Fine</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Tuesday</weekday>
+            <time>1530</time>
+            <room>SE12-322</room>
+            <instructor>Brenda Fine</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Friday</weekday>
+            <time>1230</time>
+            <room>SW3-1750</room>
+            <instructor>Brenda Fine</instructor>
+        </coursebooking>
+    </course>
+
+    <course code="COMP4711">
+        <coursebooking>
+            <weekday>Tuesday</weekday>
+            <time>1430</time>
+            <room>SW5-1840</room>
+            <instructor>James Parry</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Wednesday</weekday>
+            <time>930</time>
+            <room>SE12-320</room>
+            <instructor>James Parry</instructor>
+        </coursebooking>
+    </course>
+
+    <course code="COMP4976">
+        <coursebooking>
+            <weekday>Thursday</weekday>
+            <time>830</time>
+            <room>SE12-308</room>
+            <instructor>Medhat Elmasry</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Thursday</weekday>
+            <time>1230</time>
+            <room>SE12-308</room>
+            <instructor>Medhat Elmasry</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Friday</weekday>
+            <time>1030</time>
+            <room>SE12-308</room>
+            <instructor>Medhat Elmasry</instructor>
+        </coursebooking>
+    </course>
+
+</courses>
