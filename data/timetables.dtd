@@ -5,7 +5,7 @@
 <!ATTLIST day
 	dayofweek (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) #REQUIRED
 >	
-<!ELEMENT daybooking (time, course, room, instructor)*>
+<!ELEMENT daybooking (time, courseName, room, instructor)*>
 
 
 <!ELEMENT periods (timeslot)*>
@@ -13,7 +13,7 @@
 <!ATTLIST timeslot
 	time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
 >
-<!ELEMENT periodbooking (day, course, room, instructor)*>
+<!ELEMENT periodbooking (weekday, courseName, room, instructor)*>
 
 
 <!ELEMENT courses (course)*>
@@ -21,5 +21,5 @@
 <!ATTLIST course
 	code CDATA #REQUIRED
 >
-<!ELEMENT coursebooking (day, time, room, instructor)*>
+<!ELEMENT coursebooking (weekday, time, room, instructor)*>
 	
