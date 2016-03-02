@@ -7,3 +7,4 @@ Data modeling Timetable data. Made by BCIT students.
 
 ## Changelog
 - Initial setup with gitignore and data folder
+- Created DTD file.

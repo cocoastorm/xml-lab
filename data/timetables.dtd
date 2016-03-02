@@ -1,0 +1,25 @@
+<!ELEMENT timetables (days,periods,courses*)>
+
+<!ELEMENT days (day)*>
+<!ELEMENT day (daybooking)*>
+<!ATTLIST day
+	dayofweek (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) #REQUIRED
+>	
+<!ELEMENT daybooking (time, course, room, instructor)*>
+
+
+<!ELEMENT periods (timeslot)*>
+<!ELEMENT timeslot (periodbooking)*>
+<!ATTLIST timeslot
+	time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+>
+<!ELEMENT periodbooking (day, course, room, instructor)*>
+
+
+<!ELEMENT courses (course)*>
+<!ELEMENT course (coursebooking)*>
+<!ATTLIST course
+	code CDATA #REQUIRED
+>
+<!ELEMENT coursebooking (day, time, room, instructor)*>
+	
