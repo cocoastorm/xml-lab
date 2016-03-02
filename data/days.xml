@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<days>
+    <day dayofweek="Monday">
+        <daybooking>
+            <time>830</time>
+            <courseName>COMP1111</courseName>
+            <room>1</room>
+            <instructor>Bob Bobby</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1030</time>
+            <courseName>COMP1222</courseName>
+            <room>2</room>
+            <instructor>Lisa Lisason</instructor>
+        </daybooking>
+        <daybooking>
+            <time></time>
+            <courseName></courseName>
+            <room></room>
+            <instructor></instructor>
+        </daybooking>
+    </day>
+</days>
