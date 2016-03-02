@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE timetables SYSTEM "timetables.dtd">
+<!DOCTYPE timetables SYSTEM "timetables.dtd" [
 <!ENTITY days SYSTEM "days.xml">
 <!ENTITY periods SYSTEM "periods.xml">
-<!ENTITY courses SYSTEM "courses.xml">
+<!ENTITY courses SYSTEM "courses.xml"> ]>
+<timetables>
+  &days;
+  &periods;
+  &courses;
+</timetables>

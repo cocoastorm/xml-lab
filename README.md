@@ -10,3 +10,6 @@ Data modeling Timetable data. Made by BCIT students.
 - Create DTD file.
 - Create timetables.xml which links three facets
 - Create periods.xml with timetable data
+- Create days.xml with timetable data
+- Create courses.xml with timetable data
+- Fully update timetables.xml to include all facets

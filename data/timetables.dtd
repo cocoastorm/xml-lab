@@ -1,10 +1,10 @@
-<!ELEMENT timetables (days,periods,courses*)>
+<!ELEMENT timetables (days,periods,courses)+>
 
 <!ELEMENT days (day)*>
 <!ELEMENT day (daybooking)*>
 <!ATTLIST day
 	dayofweek (Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) #REQUIRED
->	
+>
 <!ELEMENT daybooking (time, courseName, room, instructor)*>
 
 
