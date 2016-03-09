@@ -10,42 +10,27 @@ class Timetable extends CI_Model
     public function __construct()
     {
         parent::__construct();
-        $this->xml = simplexml_load_file(DATAPATH . 'timetables.xml');
+        $this->days_xml = simplexml_load_file(DATAPATH . 'days.xml');
 
         // populate days facet
-        foreach($this->xml->timetables->days->day as $day) {
-            $this->days[(string) $day['dayofweek']] = (string) $day;
+        foreach($this->days_xml->day as $day) {
+            $record = new stdClass();
+            $record->dayofweek = (string) $day['dayofweek'];
+
+            $daybookingArr = array();
+
+            foreach($day->daybooking as $daybooking)
+            {
+                $dayrecord = new stdClass();
+                $dayrecord->time = (string) $daybooking->time;
+                $dayrecord->courseName = (string) $daybooking->courseName;
+                $dayrecord->room = (string) $daybooking->room;
+                $dayrecord->instructor = (string) $daybooking->instructor;
+
+                array_push($daybookingArr, $dayrecord);
+            }
+            $record->daybooking = $daybookingArr;
+            $this->days[$record->dayofweek] = $record;
         }
-
-        // populate periods facet
-        foreach($this->xml->timetables->periods->timeslot as $timeslot) {
-            $this->periods[(string) $timeslot['time']] = (string) $timeslot;
-        }
-
-        // populate courses facet
-        foreach($this->xml->timetables->courses->course as $course) {
-            $this->courses[(string) $course['code']] = (string) $course;
-        }
-    }
-
-    public function getDay($dayofweek) {
-        if (isset($this->days[$dayofweek]))
-            return $this->days[$dayofweek];
-        else
-            return null;
-    }
-
-    public function getTimeslot($time) {
-        if (isset($this->periods[$time]))
-            return $this->periods[$time];
-        else
-            return null;
-    }
-
-    public function getCourse($code) {
-        if (isset($this->courses[$code]))
-            return $this->courses[$code];
-        else
-            return null;
     }
 }
