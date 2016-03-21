@@ -5,13 +5,13 @@
         <coursebooking>
             <weekday>Monday</weekday>
             <time>930</time>
-            <room>SW3-4785</room>
+            <room>SW9-122</room>
             <instructor>Catherine Ryan</instructor>
         </coursebooking>
         <coursebooking>
             <weekday>Friday</weekday>
             <time>830</time>
-            <room>SW3-4785</room>
+            <room>SW5-1850</room>
             <instructor>Catherine Ryan</instructor>
         </coursebooking>
     </course>
@@ -20,7 +20,7 @@
         <coursebooking>
             <weekday>Monday</weekday>
             <time>1130</time>
-            <room>SW1-1205</room>
+            <room>SW5-1840</room>
             <instructor>Mirela Gutica</instructor>
         </coursebooking>
         <coursebooking>
@@ -38,7 +38,7 @@
         <coursebooking>
             <weekday>Thursday</weekday>
             <time>1130</time>
-            <room>SW3-1750</room>
+            <room>SW3-1710</room>
             <instructor>Mirela Gutica</instructor>
         </coursebooking>
     </course>
@@ -53,6 +53,12 @@
         <coursebooking>
             <weekday>Friday</weekday>
             <time>1430</time>
+            <room>SE12-325</room>
+            <instructor>D'Arcy Smith</instructor>
+        </coursebooking>
+        <coursebooking>
+            <weekday>Friday</weekday>
+            <time>1630</time>
             <room>SE12-325</room>
             <instructor>D'Arcy Smith</instructor>
         </coursebooking>
@@ -74,7 +80,7 @@
         <coursebooking>
             <weekday>Friday</weekday>
             <time>1230</time>
-            <room>SW3-1750</room>
+            <room>SW1-1021</room>
             <instructor>Brenda Fine</instructor>
         </coursebooking>
     </course>

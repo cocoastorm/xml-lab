@@ -11,6 +11,9 @@ class Timetable extends CI_Model
     {
         parent::__construct();
         $this->days_xml = simplexml_load_file(DATAPATH . 'days.xml');
+        $this->periods_xml = simplexml_load_file(DATAPATH . 'periods.xml');
+        $this->courses_xml = simplexml_load_file(DATAPATH . 'courses.xml');
+
 
         // populate days facet
         foreach($this->days_xml->day as $day) {
@@ -31,6 +34,49 @@ class Timetable extends CI_Model
             }
             $record->daybooking = $daybookingArr;
             $this->days[$record->dayofweek] = $record;
+        }
+
+
+
+        foreach($this->periods_xml->timeslot as $timeslot) {
+            $precord = new stdClass();
+            $precord->time = (string) $timeslot['time'];
+
+            $periodbookingArr = array();
+
+            foreach($timeslot->periodbooking as $periodbooking)
+            {
+                $timeslotrecord = new stdClass();
+                $timeslotrecord->weekday = (string) $periodbooking->weekday;
+                $timeslotrecord->courseName = (string) $periodbooking->courseName;
+                $timeslotrecord->room = (string) $periodbooking->room;
+                $timeslotrecord->instructor = (string) $periodbooking->instructor;
+
+                array_push($periodbookingArr, $timeslotrecord);
+            }
+            $precord->periodbooking = $periodbookingArr;
+            $this->periods[$precord->time] = $precord;
+        }
+
+
+        foreach($this->courses_xml->course as $course) {
+            $crecord = new stdClass();
+            $crecord->code = (string) $course['code'];
+
+            $coursebookingArr = array();
+
+            foreach($course->coursebooking as $coursebooking)
+            {
+                $courserecord = new stdClass();
+                $courserecord->time = (string) $coursebooking->time;
+                $courserecord->weekday = (string) $coursebooking->weekday;
+                $courserecord->room = (string) $coursebooking->room;
+                $courserecord->instructor = (string) $coursebooking->instructor;
+
+                array_push($coursebookingArr, $courserecord);
+            }
+            $crecord->coursebooking = $coursebookingArr;
+            $this->courses[$crecord->code] = $crecord;
         }
     }
 }
