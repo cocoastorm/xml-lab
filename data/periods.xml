@@ -4,7 +4,7 @@
     <periodbooking>
       <weekday>Monday</weekday>
       <courseName>BLAW3600</courseName>
-      <room>SW3 - 4785</room>
+      <room>SW9-122</room>
       <instructor>Catherine Ryan></instructor>
     </periodbooking>
   </timeslot>
@@ -13,7 +13,7 @@
     <periodbooking>
       <weekday>Monday</weekday>
       <courseName>COMP4735</courseName>
-      <room>SW1 - 1205</room>
+      <room>SW5-1840</room>
       <instructor>Mirela Gutica</instructor>
     </periodbooking>
   </timeslot>
@@ -22,7 +22,7 @@
     <periodbooking>
       <weekday>Monday</weekday>
       <courseName>COMP4735</courseName>
-      <room>SE12 - 320</room>
+      <room>SE12-320</room>
       <instructor>Mirela Gutica</instructor>
     </periodbooking>
   </timeslot>
@@ -31,7 +31,7 @@
     <periodbooking>
       <weekday>Tuesday</weekday>
       <courseName>COMP4977</courseName>
-      <room>SE12 - 325</room>
+      <room>SE12-325</room>
       <instructor>D'Arcy Smith</instructor>
     </periodbooking>
   </timeslot>
@@ -40,7 +40,7 @@
     <periodbooking>
       <weekday>Tuesday</weekday>
       <courseName>COMP4560</courseName>
-      <room>SW5 - 1850</room>
+      <room>SW5-1850</room>
       <instructor>Brenda Fine</instructor>
     </periodbooking>
   </timeslot>
@@ -49,7 +49,7 @@
     <periodbooking>
       <weekday>Tuesday</weekday>
       <courseName>COMP4711</courseName>
-      <room>SW5 - 1850</room>
+      <room>SW5-1840</room>
       <instructor>James Parry</instructor>
     </periodbooking>
   </timeslot>
@@ -58,7 +58,7 @@
     <periodbooking>
       <weekday>Tuesday</weekday>
       <courseName>COMP4560</courseName>
-      <room>SE12 - 322</room>
+      <room>SE12-322</room>
       <instructor>Brenda Fine</instructor>
     </periodbooking>
   </timeslot>
@@ -67,7 +67,7 @@
     <periodbooking>
       <weekday>Wednesday</weekday>
       <courseName>COMP4711</courseName>
-      <room>SE12 - 320</room>
+      <room>SE12-320</room>
       <instructor>James Parry</instructor>
     </periodbooking>
   </timeslot>
@@ -76,7 +76,7 @@
     <periodbooking>
       <weekday>Wednesday</weekday>
       <courseName>COMP4735</courseName>
-      <room>SW1 - 1205</room>
+      <room>SW1-1205</room>
       <instructor>Mirela Gutica</instructor>
     </periodbooking>
   </timeslot>
@@ -85,7 +85,7 @@
     <periodbooking>
       <weekday>Thursday</weekday>
       <courseName>COMP4796</courseName>
-      <room>SE12 - 308</room>
+      <room>SE12-308</room>
       <instructor>Medhat Elmasry</instructor>
     </periodbooking>
   </timeslot>
@@ -94,7 +94,7 @@
     <periodbooking>
       <weekday>Thursday</weekday>
       <courseName>COMP4735</courseName>
-      <room>SW3 - 1710</room>
+      <room>SW3-1710</room>
       <instructor>Mirela Gutica</instructor>
     </periodbooking>
   </timeslot>
@@ -103,7 +103,7 @@
     <periodbooking>
       <weekday>Thursday</weekday>
       <courseName>COMP4796</courseName>
-      <room>SE12 - 308</room>
+      <room>SE12-308</room>
       <instructor>Medhat Elmasry</instructor>
     </periodbooking>
   </timeslot>
@@ -112,7 +112,7 @@
     <periodbooking>
       <weekday>Friday</weekday>
       <courseName>BLAW3600</courseName>
-      <room>SW5 - 1840</room>
+      <room>SW5-1850</room>
       <instructor>Catherine J. Ryan</instructor>
     </periodbooking>
   </timeslot>
@@ -121,7 +121,7 @@
     <periodbooking>
       <weekday>Friday</weekday>
       <courseName>COMP4796</courseName>
-      <room>SE12 - 308</room>
+      <room>SE12-308</room>
       <instructor>Medhat Elmasry</instructor>
     </periodbooking>
   </timeslot>
@@ -130,7 +130,7 @@
     <periodbooking>
       <weekday>Friday</weekday>
       <courseName>COMP4560</courseName>
-      <room>SW3 - 1750</room>
+      <room>SW1-1021</room>
       <instructor>Brenda Fine</instructor>
     </periodbooking>
   </timeslot>
@@ -139,7 +139,16 @@
     <periodbooking>
       <weekday>Friday</weekday>
       <courseName>COMP4977</courseName>
-      <room>SE12 - 325</room>
+      <room>SE12-325</room>
+      <instructor>D'Arcy Smith</instructor>
+    </periodbooking>
+  </timeslot>
+
+  <timeslot time="1630">
+    <periodbooking>
+      <weekday>Friday</weekday>
+      <courseName>COMP4977</courseName>
+      <room>SE12-325</room>
       <instructor>D'Arcy Smith</instructor>
     </periodbooking>
   </timeslot>
