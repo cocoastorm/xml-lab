@@ -13,3 +13,6 @@ Data modeling Timetable data. Made by BCIT students.
 - Create days.xml with timetable data
 - Create courses.xml with timetable data
 - Fully update timetables.xml to include all facets
+- Populate all facets accordingly in constructor
+- Create entity model Booking.php
+- Add accessors for days, periods, and courses
