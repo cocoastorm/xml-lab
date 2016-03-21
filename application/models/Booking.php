@@ -3,16 +3,16 @@
 class Booking extends CI_Model
 {
     // days
-    protected $time;
-    protected $courseName;
-    protected $room;
-    protected $instructor;
+    public $time;
+    public $courseName;
+    public $room;
+    public $instructor;
 
     // periods
-    protected $weekday;
+    public $weekday;
 
     // courses
-    protected $code;
+    public $code;
 
     public function __construct()
     {
