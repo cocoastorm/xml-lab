@@ -84,6 +84,11 @@ class Timetable extends CI_Model
         }
     }
 
+    public function getDayBooking()
+    {
+        return null;
+    }
+
     public function getDay($dayofweek)
     {
         if(isset($this->days[$dayofweek])) {

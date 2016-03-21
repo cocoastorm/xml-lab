@@ -15,6 +15,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 {dayofweek}
             </th>
         </tr>
+        <tr>
+            {daybooking}
+            <td>
+                {time}
+            </td>
+            {/daybooking}
+        </tr>
         {/days}
     </table>
 </body>

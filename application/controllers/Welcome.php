@@ -35,6 +35,6 @@ class Welcome extends CI_Controller {
 					'courses' => $courses
 				);
 
-		$this->parser->parse('homepage', $data, true);
+		$this->parser->parse('homepage', $data);
 	}
 }
