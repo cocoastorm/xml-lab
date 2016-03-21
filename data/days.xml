@@ -5,19 +5,19 @@
         <daybooking>
             <time>930</time>
             <courseName>BLAW3600</courseName>
-            <room>SW3-4785</room>
+            <room>SW9-122</room>
             <instructor>Catherine Ryan</instructor>
         </daybooking>
         <daybooking>
             <time>1130</time>
             <courseName>COMP4735</courseName>
-            <room>SW1-1205</room>
+            <room>SW5-1840</room>
             <instructor>Mirela Gutica</instructor>
         </daybooking>
         <daybooking>
             <time>1230</time>
             <courseName>COMP4735</courseName>
-            <room>SW3-4785</room>
+            <room>SE12-320</room>
             <instructor>Mirela Gutica</instructor>
         </daybooking>
     </day>
@@ -89,7 +89,7 @@
         <daybooking>
             <time>830</time>
             <courseName>BLAW3600</courseName>
-            <room>SW5-1840</room>
+            <room>SW5-1850</room>
             <instructor>Catherine Ryan</instructor>
         </daybooking>
         <daybooking>
@@ -101,11 +101,17 @@
         <daybooking>
             <time>1230</time>
             <courseName>COMP4560</courseName>
-            <room>SW3-1750</room>
+            <room>SW1-1021</room>
             <instructor>Brenda Fine</instructor>
         </daybooking>
         <daybooking>
             <time>1430</time>
+            <courseName>COMP4977</courseName>
+            <room>SE12-325</room>
+            <instructor>D'Arcy Smith</instructor>
+        </daybooking>
+        <daybooking>
+            <time>1630</time>
             <courseName>COMP4977</courseName>
             <room>SE12-325</room>
             <instructor>D'Arcy Smith</instructor>
