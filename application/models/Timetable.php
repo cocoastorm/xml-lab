@@ -94,6 +94,12 @@ class Timetable extends CI_Model
         }
     }
 
+    public function getAllDays() {
+        if(isset($this->days)) {
+            return $this->days;
+        }
+    }
+
     public function getPeriod($time)
     {
         if(isset($this->periods[$time])) {
@@ -104,11 +110,27 @@ class Timetable extends CI_Model
         }
     }
 
+    public function getAllPeriods()
+    {
+        if(isset($this->periods))
+        {
+            return $this->periods;
+        }
+    }
+
     public function getCourse($code)
     {
         if(isset($this->courses[$code]))
             return $this->courses[$code];
         else
             return null;
+    }
+
+    public function getAllCourses()
+    {
+        if(isset($this->courses))
+        {
+            return $this->courses;
+        }
     }
 }

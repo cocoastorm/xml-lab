@@ -18,10 +18,23 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
 	public function index()
 	{
-		$this->load->model('Booking');
-		$this->load->model('Timetable');
-		$this->load->view('welcome_message');
+		$this->load->library('parser');
+		$this->load->model('booking');
+		$this->load->model('timetable');
+
+		$days = $this->timetable->getAllDays();
+		$periods = $this->timetable->getAllPeriods();
+		$courses = $this->timetable->getAllCourses();
+
+		$data = array(
+					'days' => $days,
+					'periods' => $periods,
+					'courses' => $courses
+				);
+
+		$this->parser->parse('homepage', $data, true);
 	}
 }
