@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <periods>
-
-
   <timeslot time="830">
     <periodbooking>
       <weekday>Tuesday</weekday>
@@ -132,6 +130,5 @@
       <instructor>D'Arcy Smith</instructor>
     </periodbooking>
   </timeslot>
-
 
 </periods>

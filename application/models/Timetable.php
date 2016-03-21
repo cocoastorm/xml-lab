@@ -27,6 +27,7 @@ class Timetable extends CI_Model
             foreach($day->daybooking as $daybooking)
             {
                 $dayrecord = new Booking();
+                $dayrecord->setWeekday((string) $daybooking->weekday);
                 $dayrecord->setTime((string) $daybooking->time);
                 $dayrecord->setCourseName((string) $daybooking->courseName);
                 $dayrecord->setRoom((string) $daybooking->room);
@@ -72,6 +73,7 @@ class Timetable extends CI_Model
             {
                 $courserecord = new Booking();
                 $courserecord->setWeekday((string) $coursebooking->weekday);
+                $courserecord->setTime((string) $coursebooking->time);
                 $courserecord->setCourseName((string) $coursebooking->courseName);
                 $courserecord->setRoom((string) $coursebooking->room);
                 $courserecord->setInstructor((string) $coursebooking->instructor);
@@ -82,11 +84,6 @@ class Timetable extends CI_Model
             $record->coursebooking = $coursesbookingArr;
             $this->courses[$record->code] = $record;
         }
-    }
-
-    public function getDayBooking()
-    {
-        return null;
     }
 
     public function getDay($dayofweek)
@@ -137,5 +134,55 @@ class Timetable extends CI_Model
         {
             return $this->courses;
         }
+    }
+
+    public function daysDropdown() {
+        $daysDropDown = array();
+
+        foreach($this->days as $day)
+        {
+            $daysDropDown[(string) $day->dayofweek] = (string) $day->dayofweek;
+        }
+
+        return $daysDropDown;
+    }
+
+    public function timeslotsDropdown() {
+        $timeslotsDropDown = array();
+
+        foreach($this->periods as $period)
+        {
+            switch($period->time)
+            {
+                case "830":
+                    $timeslotsDropDown[(string) $period->time] = "8:30am";
+                    break;
+                case "930":
+                    $timeslotsDropDown[(string) $period->time] = "9:30am";
+                    break;
+                case "1030":
+                    $timeslotsDropDown[(string) $period->time] = "10:30am";
+                    break;
+                case "1130":
+                    $timeslotsDropDown[(string) $period->time] = "11:30am";
+                    break;
+                case "1230":
+                    $timeslotsDropDown[(string) $period->time] = "12:30pm";
+                    break;
+                case "1330":
+                    $timeslotsDropDown[(string) $period->time] = "1:30pm";
+                    break;
+                case "1430":
+                    $timeslotsDropDown[(string) $period->time] = "2:30pm";
+                    break;
+                case "1530":
+                    $timeslotsDropDown[(string) $period->time] = "3:30pm";
+                    break;
+                case "1630":
+                    $timeslotsDropDown[(string) $period->time] = "4:30pm";
+                    break;
+            }
+        }
+        return $timeslotsDropDown;
     }
 }
