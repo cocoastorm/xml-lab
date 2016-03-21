@@ -83,4 +83,32 @@ class Timetable extends CI_Model
             $this->courses[$record->code] = $record;
         }
     }
+
+    public function getDay($dayofweek)
+    {
+        if(isset($this->days[$dayofweek])) {
+            return $this->days[$dayofweek];
+        }
+        else {
+            return null;
+        }
+    }
+
+    public function getPeriod($time)
+    {
+        if(isset($this->periods[$time])) {
+            return $this->periods[$time];
+        }
+        else {
+            return null;
+        }
+    }
+
+    public function getCourse($code)
+    {
+        if(isset($this->courses[$code]))
+            return $this->courses[$code];
+        else
+            return null;
+    }
 }
