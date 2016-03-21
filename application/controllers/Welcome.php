@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->library('parser');
+		$this->load->helper('form');
 		$this->load->model('booking');
 		$this->load->model('timetable');
 
@@ -29,10 +30,17 @@ class Welcome extends CI_Controller {
 		$periods = $this->timetable->getAllPeriods();
 		$courses = $this->timetable->getAllCourses();
 
+		$daysdropdown = form_dropdown('days', $this->timetable->daysDropdown(), 'Monday');
+		$timeslotsdropdown = form_dropdown('timeslots', $this->timetable->timeslotsDropdown(), '830');
+		$submitBtn = form_submit('submit', 'Search!');
+
 		$data = array(
 					'days' => $days,
 					'periods' => $periods,
-					'courses' => $courses
+					'courses' => $courses,
+					'daysdropdown' => $daysdropdown,
+					'timeslotsdropdown' => $timeslotsdropdown,
+					'submitBtn' => $submitBtn
 				);
 
 		$this->parser->parse('homepage', $data);

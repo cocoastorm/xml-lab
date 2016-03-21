@@ -8,11 +8,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>Home</title>
 </head>
 <body>
+    <div>
+        <form method="post" action="/search">
+            {daysdropdown}
+            {timeslotsdropdown}
+            {submitBtn}
+        </form>
+    </div>
     <table width="100%" border="1">
         {days}
         <tr>
             <th colspan="4" bgcolor="#9acd32">
-
                 {dayofweek}
             </th>
         </tr>
