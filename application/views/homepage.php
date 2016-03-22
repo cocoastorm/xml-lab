@@ -9,12 +9,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
     <div>
-        <form method="post" action="/search">
+        <form method="post" action="welcome/search">
             {daysdropdown}
             {timeslotsdropdown}
             {submitBtn}
         </form>
     </div>
+    <br>
+    <br>
+    <div>
+        <form method="post" action="welcome/bingo">
+            {daysdropdownB}
+            {timeslotsdropdownB}
+            {submitBtnB}
+        </form>
+    </div>
+    <br>
+    <h1>Days</h1>
+    <br>
     <table width="100%" border="1">
         {days}
         <tr>
@@ -50,8 +62,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         {/days}
     </table>
 
-<br><br>
-
+    <br>
+    <br>
+    <h1>Courses</h1>
+    <br>
     <table width="100%" border="1">
         {courses}
         <tr>
@@ -88,7 +102,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         {/courses}
     </table>
 
-<br><br>
+    <br>
+    <br>
+    <h1>Periods</h1>
+    <br>
 
     <table width="100%" border="1">
         {periods}
